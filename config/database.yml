@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+
+development:
+  <<: *default
+  database: ruby_project_development
+
+test:
+  <<: *default
+  database: ruby_project_test

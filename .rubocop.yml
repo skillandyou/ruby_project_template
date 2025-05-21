@@ -1,0 +1,51 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+
+# Autoriser des méthodes plus longues
+Metrics/MethodLength:
+  Max: 25
+  Exclude:
+    - "test/**/*"
+
+# Autoriser des classes plus longues
+Metrics/ClassLength:
+  Max: 150
+  Exclude:
+    - "test/**/*"
+
+# Assouplir la limite de longueur des lignes
+Layout/LineLength:
+  Max: 120
+
+# Permettre des blocs plus grands
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - "spec/**/*"
+    - "test/**/*"
+
+# Configuration pour la complexité cyclomatique
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+# Permettre plus de paramètres dans les méthodes
+Metrics/ParameterLists:
+  Max: 5
+
+# Ne pas forcer la documentation
+Style/Documentation:
+  Enabled: false
+
+# Autoriser les modifications de self
+Style/TrivialAccessors:
+  AllowPredicates: true
+  AllowDSLWriters: true
+
+# Permettre both {} et do...end
+Style/BlockDelimiters:
+  Enabled: true
+  EnforcedStyle: semantic
+
+Metrics/AbcSize:
+  Enabled: false

@@ -1,0 +1,47 @@
+# Fichiers et dossiers Ruby
+*.gem
+*.rbc
+.bundle/
+vendor/bundle
+log/
+tmp/
+
+# Fichiers de configuration et d'environnement
+.env
+.env.*
+
+# Fichiers de base de données
+*.sqlite3
+db/*.sqlite3
+db/*.sqlite3-journal
+db/*.db
+
+# Fichiers de PID et de sockets
+*.pid
+*.pid.lock
+tmp/pids/
+tmp/sockets/
+
+# Fichiers de cache
+.byebug_history
+pry_history
+irb_history
+
+# Fichiers générés par macOS
+.DS_Store
+
+# Fichiers générés par l'éditeur
+*.swp
+*~
+.idea/
+
+# Fichiers de coverage
+coverage/
+
+# Fichiers de test
+spec/reports/
+
+# Autres
+node_modules/
+
+.session.key
